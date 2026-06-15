@@ -112,7 +112,7 @@ docker push tubescloudcomptingkelompok7.azurecr.io/gateway-frontend:latest
    * `DB_PORT` = `5432`
    * `DB_DATABASE` = `tubes_cloud_auth`
    * `DB_USERNAME` = `neondb_owner`
-   * `DB_PASSWORD` = (Masukkan kata sandi asli database Neon Anda yang tertera di screenshot pertama Neon)
+   * `DB_PASSWORD` = `npg_sQ8qtHvRY7IZ`
 7. Klik tombol **`Next: Ingress >`** di bagian bawah halaman.
 8. Di tab **Ingress**, atur konfigurasi berikut:
    * **Ingress:** Centang kotak **`Enabled`** (Aktif).
@@ -150,7 +150,7 @@ docker push tubescloudcomptingkelompok7.azurecr.io/gateway-frontend:latest
    * `DB_PORT` = `5432`
    * `DB_DATABASE` = `tubes_cloud_project`
    * `DB_USERNAME` = `neondb_owner`
-   * `DB_PASSWORD` = (Masukkan kata sandi asli database Neon Anda yang tertera di screenshot pertama Neon)
+   * `DB_PASSWORD` = `npg_sQ8qtHvRY7IZ`
 6. Klik tombol **`Next: Ingress >`** di bagian bawah.
 7. Di tab **Ingress**, atur konfigurasi berikut:
    * **Ingress:** Centang kotak **`Enabled`**.
