@@ -103,21 +103,11 @@ docker push tubescloudregistrymahen.azurecr.io/gateway-frontend:latest
      ```
      ```text
      DB_CONNECTION = pgsql
-     ```
-     ```text
-     DB_HOST = <PASTE_HOST_NEON_DATABASE_AUTH_ANDA>
-     ```
-     ```text
+     DB_HOST = ep-lively-hat-ao1qoa5z.c-2.ap-southeast-1.aws.neon.tech
      DB_PORT = 5432
-     ```
-     ```text
-     DB_DATABASE = neondb
-     ```
-     ```text
+     DB_DATABASE = tubes_cloud_auth
      DB_USERNAME = neondb_owner
-     ```
-     ```text
-     DB_PASSWORD = <PASTE_PASSWORD_NEON_DATABASE_AUTH_ANDA>
+     DB_PASSWORD = <PASTE_PASSWORD_NEON_DATABASE_ANDA>
      ```
 4. **Ingress:**
    * Ingress: `Enabled`
@@ -151,21 +141,11 @@ docker push tubescloudregistrymahen.azurecr.io/gateway-frontend:latest
      ```
      ```text
      DB_CONNECTION = pgsql
-     ```
-     ```text
-     DB_HOST = <PASTE_HOST_NEON_DATABASE_PROJECT_ANDA>
-     ```
-     ```text
+     DB_HOST = ep-lively-hat-ao1qoa5z.c-2.ap-southeast-1.aws.neon.tech
      DB_PORT = 5432
-     ```
-     ```text
-     DB_DATABASE = neondb
-     ```
-     ```text
+     DB_DATABASE = tubes_cloud_project
      DB_USERNAME = neondb_owner
-     ```
-     ```text
-     DB_PASSWORD = <PASTE_PASSWORD_NEON_DATABASE_PROJECT_ANDA>
+     DB_PASSWORD = <PASTE_PASSWORD_NEON_DATABASE_ANDA>
      ```
 3. **Ingress:**
    * Ingress: `Enabled`
