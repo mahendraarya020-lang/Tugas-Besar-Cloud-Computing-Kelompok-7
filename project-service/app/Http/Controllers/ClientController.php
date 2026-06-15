@@ -19,6 +19,10 @@ class ClientController extends Controller
 
         Log::info("User ID {$userId} (Role: {$role}) mengambil data daftar klien.");
 
+        if ($role !== 'Admin') {
+            $this->checkAndSeedDummyData($userId);
+        }
+
         if ($role === 'Admin') {
             $clients = Client::all();
         } else {

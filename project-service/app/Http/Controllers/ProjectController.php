@@ -20,6 +20,10 @@ class ProjectController extends Controller
 
         Log::info("User ID {$userId} (Role: {$role}) mengambil data daftar proyek.");
 
+        if ($role !== 'Admin') {
+            $this->checkAndSeedDummyData($userId);
+        }
+
         if ($role === 'Admin') {
             $projects = Project::with('client')->get();
         } else {
