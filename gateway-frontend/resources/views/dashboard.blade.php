@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - TUBES CLOUD COMPUTING</title>
+    <title>Dashboard - Freelance group 7</title>
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
                         FO
                     </div>
                     <span class="text-xl font-bold tracking-tight text-[#191c1e]">
-                        TUBES CLOUD COMPUTING
+                        Freelance group 7
                     </span>
                 </div>
                 <!-- User Info & Logout -->

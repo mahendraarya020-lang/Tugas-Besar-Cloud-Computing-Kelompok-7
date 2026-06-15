@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - TUBES CLOUD COMPUTING</title>
+    <title>Register - Freelance group 7</title>
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
                 FO
             </div>
             <h1 class="text-2xl font-bold tracking-tight text-[#191c1e] mb-1">
-                TUBES CLOUD COMPUTING
+                Freelance group 7
             </h1>
             <p class="text-brand-secondary text-xs">Crafted for Professionals</p>
         </div>

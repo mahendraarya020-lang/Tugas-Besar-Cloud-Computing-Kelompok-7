@@ -201,7 +201,7 @@ class InvoiceController extends Controller
                         <td colspan='2'>
                             <table>
                                 <tr>
-                                    <td class='title'>TUBES CLOUD COMPUTING</td>
+                                    <td class='title'>Freelance group 7</td>
                                     <td>
                                         Invoice #: INV-{$invoice->id}<br>
                                         Created: " . $invoice->issued_at . "<br>
