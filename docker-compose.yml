@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: tubes_cloud_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: tubes_cloud_user
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: tubes_cloud_auth
+    volumes:
+      - tubes_cloud_db_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    networks:
+      - tubes_cloud_network
+
+  auth-service:
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    container_name: tubes_cloud_auth_service
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./auth-service:/var/www
+    depends_on:
+      - db
+    networks:
+      - tubes_cloud_network
+
+  project-service:
+    build:
+      context: ./project-service
+      dockerfile: Dockerfile
+    container_name: tubes_cloud_project_service
+    restart: unless-stopped
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./project-service:/var/www
+    depends_on:
+      - db
+    networks:
+      - tubes_cloud_network
+
+  gateway-frontend:
+    build:
+      context: ./gateway-frontend
+      dockerfile: Dockerfile
+    container_name: tubes_cloud_gateway_frontend
+    restart: unless-stopped
+    ports:
+      - "80:8000"
+    volumes:
+      - ./gateway-frontend:/var/www
+    networks:
+      - tubes_cloud_network
+
+networks:
+  tubes_cloud_network:
+    driver: bridge
+
+volumes:
+  tubes_cloud_db_data:
+    driver: local
